@@ -39,7 +39,7 @@
  <body>
  <%@ include file="BasicUI/navbar.jsp" %>
  <%@ include file="MyPage_inc/mypagebar.jsp" %>
- <%@ include file="MyPage_inc/clipboard.jsp" %>	
+ <%@ include file="MyPage_inc/form_clipboard.jsp" %>	
 
 	
 <div class="container">

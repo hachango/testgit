@@ -22,7 +22,7 @@
 			<!-- 탭 화면 시작 -->
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="home">
-					<%@ include file="clipboard.jsp" %>
+					<%@ include file="form_clipboard.jsp" %>
 				</div>				
 				<div class="tab-pane fade" id="dropdown1">
 					<p>세 번째 탭의 첫 번째 항목에 대한 내용입니다.</p>
@@ -34,7 +34,7 @@
 					<p>개인정보 수정에 대한 내용입니다.</p>
 				</div>
 				<div class="tab-pane fade" id="getout">
-					<%@ include file="membership_withdrawal.jsp" %>
+					<%@ include file="form_dropout.jsp" %>
 				</div>
 			</div>
 			<!--// 탭 화면 끝 -->		
