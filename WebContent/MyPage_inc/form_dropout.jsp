@@ -5,7 +5,7 @@
 
 <body>
 
-		<div class="container">
+		<div class="container">       
 			<form role="form">
 				<fieldset>
 					<legend>회원탈퇴</legend>
