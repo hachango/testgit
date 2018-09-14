@@ -38,86 +38,44 @@
 	</head>
  <body>
  <%@ include file="BasicUI/navbar.jsp" %>
- <%@ include file="BasicUI/mypagebar.jsp" %>
-		
-		<!-- thumbnail -->
-		<div class="container">
-    		<!--데스크탑: 한줄에 4개, 테블릿:한줄에 2개씩 배치되도록 그리드 구성 -->
-    		<div class="row">
-    			
-                <!--게시물 하나 시작-->
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-    				<img alt="엔틱 자전거 -my wish list" src="img/img1.jpg">
-                    <div class="caption">
-                        <h3>경복궁</h3>
-                        <p>날씨가 이리좋은데 나는 여기서 왜 이걸하는가 경복궁을 보내달라</p>
-                        <div class="btn-group">
-                            <a href="#" class="btn btn-success btn-sm">수정</a>
-                            <a href="#" class="btn btn-danger btn-sm">삭제</a>
-                        </div>
-    			     </div>
-                 </div>
-                </div>
-                <!--게시물 하나 끝-->
+ <%@ include file="MyPage_inc/mypagebar.jsp" %>
+ <%@ include file="MyPage_inc/clipboard.jsp" %>	
 
-                <!--게시물 하나 시작-->
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-    				<img alt="엔틱 자전거 -my wish list" src="img/img1.jpg">
-                    <div class="caption">
-                        <h3>경복궁</h3>
-                        <p>날씨가 이리좋은데 나는 여기서 왜 이걸하는가 경복궁을 보내달라</p>
-
-                        <div class="btn-group">
-                            <a href="#" class="btn btn-success btn-sm">수정</a>
-                            <a href="#" class="btn btn-danger btn-sm">삭제</a>
-                        </div>
-
-    			     </div>
-                 </div>
-                </div>
-                <!--게시물 하나 끝-->
-                <!--게시물 하나 시작-->
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-    				<img alt="엔틱 자전거 -my wish list" src="img/img1.jpg">
-                    <div class="caption">
-                        <h3>경복궁</h3>
-                        <p>날씨가 이리좋은데 나는 여기서 왜 이걸하는가 경복궁을 보내달라</p>
-                        <div class="btn-group">
-                            <a href="#" class="btn btn-success btn-sm">수정</a>
-                            <a href="#" class="btn btn-danger btn-sm">삭제</a>
-                        </div>
-
-    			     </div>
-                 </div>
-                </div>
-                <!--게시물 하나 끝-->
-                <!--게시물 하나 시작-->
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-    				<img alt="엔틱 자전거 -my wish list" src="img/img1.jpg">
-                    <div class="caption">
-                        <h3>경복궁</h3>
-                        <p>날씨가 이리좋은데 나는 여기서 왜 이걸하는가 경복궁을 보내달라</p>
-                        <div class="btn-group">
-                            <a href="#" class="btn btn-success btn-sm">수정</a>
-                            <a href="#" class="btn btn-danger btn-sm">삭제</a>
-                        </div>
-    			     </div>
-                 </div>
-                </div>
-                <!--게시물 하나 끝-->
-            </div>
-        </div>
-		<!--//thumbnail 끝 -->
 	
 <div class="container">
 <%@ include file="BasicUI/footer.jsp" %>
-</div>
+</div>	
+
 		<!-- Javascript -->
 		<script src="assets/js/jquery-1.10.2.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-	</body>
+		<script src="plugins/sweetalert/sweetalert2.all.min.js"></script>
+		<script>
+			$(function(){
+
+				$(".btn2").click(function(){
+					// 확인,취소버튼에 따른 후속 처리 구현
+					swal({
+						title:'확인',												// 제목
+						text:"정말 삭제하시겠습니까?",								// 내용
+						type:'warning',												// 확인버튼 표시 문구
+						confirmButtonText:'완료',									// 아이콘 종류
+						showCancelButton:true,										//취소버튼 표시 여부
+						cancelButtonText:'취소'										// 취소버튼 표시문구
+					})
+					.then(function(result){											// 버튼이 눌러졌을 경우의 콜백 연결
+						if(result.value) {
+							swal('삭제','성공적으로 삭제되었습니다.','success');			// 확인 버튼이 눌러진 경우
+						} else if(result.dismiss==='cancel'){						// 취소버튼이 눌러진 경우
+							swal('취소','삭제가 취소되었습니다.','error');		
+						}
+					});
+				});
+			});
+		</script>
+</body>
 </html>
+
+
+
+
