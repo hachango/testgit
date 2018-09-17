@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 <head>
-<%@ include file="BasicUI/common.jsp" %>   
+<%@ include file="BasicUI/common.jsp" %>
 		<style type="text/css">
 			body {
 				padding-top: 50px;

@@ -17,34 +17,34 @@
 					</button>
 					<!--// 반응형 메뉴 버튼 -->
 					<!-- 로고 -->
-					<a class="navbar-brand" href="#">Seoul4U</a>
+					<a class="navbar-brand" href="MainPage.jsp">Seoul4U</a>
 					<!--// 로고 -->
 				</div>
 				<!--// 로고 영역 -->
 				<!-- 메뉴 영역 -->
 				<div class="navbar-collapse collapse">
 					<!-- 메인메뉴 -->
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav" id="mytab">
 						<li class="active">
-							<a href="#">Home</a>
+							<a href="#travelTab1" data-toggle="tab">Home</a>
 						</li>
 						<li>
-							<a href="#">축제/행사</a>
+							<a href="#travelTab2" data-toggle="tab">축제/행사</a>
 						</li>
 						<li>
-							<a href="#">공연/전시</a>
+							<a href="#travelTab3" data-toggle="tab">공연/전시</a>
 						</li>
 						<li>
-							<a href="#">맛집</a>
+							<a href="#travelTab4" data-toggle="tab">맛집</a>
 						</li>
 						<li>
-							<a href="#">여행코스</a>
+							<a href="#travelTab5" data-toggle="tab">여행코스</a>
 						</li>
 					</ul>
 					<!--// 메인메뉴 -->
 					<!-- 서치 + 로그인 + 회원가입 -->
 					<form class="navbar-form navbar-right">
-            			<input type="search" class="form-control">
+            			<input type="search" class="form-control col-md-3 col-xs-3 col-sm-3">
 							<button type="submit" class="btn btn-default">
 								검색
 							</button>

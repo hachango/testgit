@@ -73,7 +73,7 @@
 	
 	int user_name_len = user_name.length();
 	if(user_name_len > 10){
-		web.redirect(null, "비번은 10자 이내로");
+		web.redirect(null, "이름은 10자 이내로");
 		return;
 	}
 	
@@ -107,6 +107,6 @@
 	
 
 	/* 결과 처리 */
-	web.redirect("join_result.jsp", null);
+	web.redirect("../MyPage.jsp", null);
 //	web.redirect("D:/jsp/workspace/TeamProject/WebContent/MainPage.jsp", null);
 %>

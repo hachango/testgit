@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true" %>
-		
+	
 	<!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -12,14 +12,14 @@
           <h4><span class="glyphicon glyphicon-lock"></span><b>Login</b></h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
-          <form role="form">
+          <form name="login" id="login" role="form" method="post" action="BasicUI/login_exception.jsp">
             <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span>UserID</label>
-              <input type="text" class="form-control" id="usrname" placeholder="아이디를 입력하세요." maxlength="20">
+              <label for="user_id"><span class="glyphicon glyphicon-user"></span>UserID</label>
+              <input type="text" class="form-control" id="user_id" name="user_id" placeholder="아이디를 입력하세요." maxlength="20">
             </div>
             <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>Password</label>
-              <input type="text" class="form-control" id="psw" placeholder="비밀번호를 입력하세요.">
+              <label for="user_pw"><span class="glyphicon glyphicon-eye-open"></span>Password</label>
+              <input type="password" class="form-control" id="user_pw" name="user_pw" placeholder="비밀번호를 입력하세요." maxlength="20">
             </div>
             <div class="checkbox">
               <label><input type="checkbox" value="" checked>아이디 저장하기</label>

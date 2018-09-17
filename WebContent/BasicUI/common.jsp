@@ -14,8 +14,10 @@
 
 		<!-- 나눔고딕 웹 폰트 적용 -->
 		<link rel="stylesheet" type="text/css" href="assets/css/nanumfont.css" />
-
-		<link rel="stylesheet" href="plugins/sweetalert/sweetalert2.min.css"/>
+		
+		<!-- Javascript -->
+		<script src="assets/js/jquery-1.10.2.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
 		<!-- 반응형 웹을 지원하지 않을 경우 -->
 		<!-- <link rel="stylesheet" href="assets/css/non-responsive.css" /> -->
 

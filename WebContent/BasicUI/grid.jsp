@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true" %>
 
-
+		<div class="container">
 			<div class="row">
 				<div class="col-md-4 text-center">
 					<!-- 게시물 하나 시작 -->
@@ -81,4 +81,4 @@
 				</div>
 			<!--// 게시물 하나 끝 -->
 			</div>
-			
+		</div>
