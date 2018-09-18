@@ -46,6 +46,6 @@
 	}
 	
 	/* 결과 처리 */
-	web.redirect("../AdminMainPage.jsp","환영합니다.");
+	web.redirect("../../AdminMainPage.jsp","환영합니다.");
 
 %>

@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 <head> 
-<%@ include file="BasicUI/common.jsp" %>
+<%@ include file="main/inc/common.jsp" %>
 	<style type="text/css">
 		body {
 			padding-top: 50px;
@@ -39,6 +39,6 @@
     		<button type="submit" class="btn btn-success btn-block">FIND</button>
 		</form>
 	</div>
-	<%@ include file="BasicUI/footer.jsp" %>
+	<%@ include file="main/inc/footer.jsp" %>
 </body>
 </html>

@@ -107,6 +107,6 @@
 	
 
 	/* 결과 처리 */
-	web.redirect("../MyPage.jsp", null);
+	web.redirect("../../MyPage.jsp", "환영합니다");
 //	web.redirect("D:/jsp/workspace/TeamProject/WebContent/MainPage.jsp", null);
 %>

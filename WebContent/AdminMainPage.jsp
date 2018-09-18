@@ -3,12 +3,12 @@
 <!doctype html>
 <html>
 <head>
-	<%@ include file="BasicUI/common.jsp" %>
+	<%@ include file="main/inc/common.jsp" %>
 </head>
 <body>
 	<!-- 페이지 상단 -->
 	<div class="pull-right" style="padding:40px 50px;">
-		<a href="MainPage.jsp"><button class="btn btn-info">사용자페이지 이동</button></a>
+		<a href="index.jsp"><button class="btn btn-info">사용자페이지 이동</button></a>
 	</div>
 	<div class="container" style="padding:40px 50px;">
   		<h2>관리자 페이지</h2>
@@ -25,7 +25,7 @@
 	<div class=container style="padding:0px 50px;">
   		<div class="tab-content">
     		<div id="notice" class="tab-pane fade in active">
-    			<%@ include file="admin/notice.jsp" %>
+    			<%@ include file="main/admin/notice.jsp" %>
     		</div>
     		<div id="member" class="tab-pane fade">
      		<h3>회원관리</h3>

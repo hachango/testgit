@@ -1,13 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true" %>
-<!doctype html>
-<html>
-<head>
-		<style type="text/css">
-			
-		</style>
-	</head>
- <body>
+
 	<div class="container">
 		<nav class="navbar navbar-default" role="navigation">
     		<!--로고-->
@@ -34,7 +27,7 @@
 	</div>	
 	<div class="tab-content">
 		<div role="tabpanel" class="tab-pane fade active in" id="trip_planTab1">
-			<%@ include file="com_plan.jsp" %>
+			<%@ include file="end_plan.jsp" %>
 		</div>
 		<div role="tabpanel" class="tab-pane fade" id="trip_planTab2">
 			<%@ include file="ing_plan.jsp" %>
@@ -43,6 +36,3 @@
 			<%@ include file="like_plan.jsp" %>
 		</div>
 	</div>
-	
-</body>
-</html>

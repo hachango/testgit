@@ -17,7 +17,7 @@
 					</button>
 					<!--// 반응형 메뉴 버튼 -->
 					<!-- 로고 -->
-					<a class="navbar-brand" href="MainPage.jsp">Seoul4U</a>
+					<a class="navbar-brand" href="index.jsp">Seoul4U</a>
 					<!--// 로고 -->
 				</div>
 				<!--// 로고 영역 -->

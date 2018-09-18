@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page trimDirectiveWhitespaces="true" %> 
+<%@ page trimDirectiveWhitespaces="true" %>
 <!doctype html>
 <html>
 <head>
-<%@ include file="BasicUI/common.jsp" %>
+<%@ include file="main/inc/common.jsp" %>
 </head>
 <body>
 	<div class="pull-right" style="padding:40px 50px;">
-		<a href="MainPage.jsp"><button class="btn btn-info">사용자페이지 이동</button></a>
+		<a href="index.jsp"><button class="btn btn-info">사용자페이지 이동</button></a>
 	</div>
 	<div class="container">
 		<div class="center-block">
-			<form class="admin_login col-md-6" name="find_id" id="find_id" role="form" method="post" style="padding:40px 50px;" action="admin/AdminLogin_exception.jsp">
+			<form class="admin_login col-md-6" name="find_id" id="find_id" role="form" method="post" style="padding:40px 50px;" action="main/admin/AdminLogin_exception.jsp">
 				<h1>Admin Login</h1>
 				<div class="form-group">
    	        	   <label for="admin_id">AdminID</label>

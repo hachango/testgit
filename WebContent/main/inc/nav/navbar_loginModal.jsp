@@ -12,7 +12,7 @@
           <h4><span class="glyphicon glyphicon-lock"></span><b>Login</b></h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
-          <form name="login" id="login" role="form" method="post" action="BasicUI/login_exception.jsp">
+          <form name="login" id="login" role="form" method="post" action="main/inc/nav/login_exception.jsp">
             <div class="form-group">
               <label for="user_id"><span class="glyphicon glyphicon-user"></span>UserID</label>
               <input type="text" class="form-control" id="user_id" name="user_id" placeholder="아이디를 입력하세요." maxlength="20">

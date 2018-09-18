@@ -45,6 +45,6 @@
 		return;
 	}
 	/* 결과 처리 */
-	web.redirect("../MyPage.jsp","로그인 되었습니다.");
+	web.redirect("../../../MyPage.jsp","로그인 되었습니다.");
 //	web.redirect("D:/jsp/workspace/TeamProject/WebContent/MainPage.jsp", null);
 %>

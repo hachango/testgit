@@ -1,10 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true" %>
-<!doctype html>
-<html>
-
-<body>
-
 		<div class="container">
 			<form role="form">
 				<fieldset>
@@ -27,14 +22,3 @@
 				</fieldset>
 			</form>
 		</div>
-
-
-		<!-- Javascript -->
-		<script src="assets/js/jquery-1.10.2.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-	</body>
-</html>
-
-
-
-

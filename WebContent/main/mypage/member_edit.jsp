@@ -1,19 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true" %>
-<!doctype html>
-<html>
-<head>
-<%@ include file="main/inc/common.jsp" %>
-</head>
-<body>
-
-
-<div class="container">
+	<div class="container">
     <div class="page-header">
-        <h1>회원가입</h1>
+        <h1>회원정보수정</h1>
     </div>
 
-    <form class="form-horizontal" method="post" action="main/member/register_form_exception.jsp">
+    <form class="form-horizontal" method="post" action="edit_result.jsp">
       <div class="form-group">
         <label for="user_id" class="col-sm-3 control-label" >아이디</label>
         <div class="col-sm-6">
@@ -60,26 +52,20 @@
          <input class="form-control" id="user_email" name="user_email" type="email" placeholder="이메일 입력하세요.">
          </div>
     </div>
-<!--     
     <div class="form-group">
-        <label class="col-sm-3 control-label" for="user_gender">성별</label>
+        <label class="col-sm-3 control-label" for="gender">성별</label>
         <div class="col-sm-6">
-          <label><input type="checkbox" id="woman" name="user_gender" class="form-control">여자</label>
-          <label><input type="checkbox" id="man" name="user_gender" class="form-control">남자</label>
+          <label><input type="radio" name="gender" id="woman" class="form-control">여자</label>
+          <label><input type="radio" name="gender" id="man" class="form-control">남자</label>
         </div>
     </div>
- -->    
-    <div class="form-group"> 
+
+    <div class="form-group">
       <div class="col-sm-12 text-center">
-        <button class="btn btn-primary" type="submit">회원가입</button>
-        <a href="index.jsp"><button class="btn btn-danger" type="button">가입취소</button></a>
+        <button class="btn btn-primary btn1" type="submit">회원정보수정</button>
+        <a href="MyPage.jsp"><button class="btn btn-danger btn2" type="button">수정취소</button></a>
       </div>
     </div>
     </form>
 
 </div>
-		<!-- Javascript -->
-		<script src="assets/js/jquery-1.10.2.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-	</body>
-</html>

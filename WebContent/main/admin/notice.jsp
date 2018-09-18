@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true" %>
+<!-- 공지등록 모달창 구현부분 -->
+<%@ include file="notice_registerModal.jsp" %>
+<!--//공지등록 모달창 구현부분 -->
 <!-- 공지사항 검색창 -->
 <div class="row box">
       				<form>
@@ -75,7 +78,8 @@
 <!-- 공지사항 하단 -->
 <div class="row box col-md-12">
 	<div class="pull-left">
-		<button class="btn btn-danger">공지등록</button><button class="btn btn-info">삭제하기</button>
+		<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-danger">공지등록</button>
+		<button class="btn btn-info">삭제하기</button>
     </div>
     <div class="col-md-offset-4">
       	<ul class="pagination">			 
